@@ -10,10 +10,7 @@
 
     <!--css-->
     <link rel="stylesheet" href="../css/main_preloader.css">
-    <link rel="stylesheet" href="../css/main_login.css">
     <link rel="stylesheet" href="../css/main_style.css">
-     
-    <script src="../../controller/front-end/mostrar_&_ocultar_senha.js"></script>
 
     <title>Adotpet</title>
 
@@ -63,69 +60,71 @@
     <br>
 
     <section class="container"><!--barra de dados-->
-      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-dark">
-        <h1 class="display-4 text-center">Perfil</h1>
-     </div> 
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-dark"></div>
+        <h1 class="display-4 text-center">Divulgar</h1>
 
-        
-     <div class="col-md-6 container">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">função do usuário</strong>
-          <h3 class="mb-0">nome do usuario</h3>
-          <p class="mb-auto">Bem vindo.</p>
-
-          <br>
-          <br>
-     
-            <a href="cadastrar_dados.html" type="button" class="btn btn-outline-primary" >Adicionar dados do usuario 
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-journal-plus" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 5.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V10a.5.5 0 0 1-1 0V8.5H6a.5.5 0 0 1 0-1h1.5V6a.5.5 0 0 1 .5-.5z"/>
-                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-              </svg>
-
-            </a>
-
-            <br>
-
-            <a type="button" class="btn btn-outline-success" href="alterar_todos_os_dados.html">Alterar dados do usuário
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
-                <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
-              </svg>
-
-            </a>
-
-            <br>
+        <div class="alert alert-info" role="alert">
+          se possivel envie uma foto do animal.
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-lg" viewBox="0 0 16 16">
+            <path d="m9.708 6.075-3.024.379-.108.502.595.108c.387.093.464.232.38.619l-.975 4.577c-.255 1.183.14 1.74 1.067 1.74.72 0 1.554-.332 1.933-.789l.116-.549c-.263.232-.65.325-.905.325-.363 0-.494-.255-.402-.704l1.323-6.208Zm.091-2.755a1.32 1.32 0 1 1-2.64 0 1.32 1.32 0 0 1 2.64 0Z"/>
+          </svg>
+        </div>
+   
+ <form method="POST" class="container"><!--link do servidor-->
   
-            <a type="button" class="btn btn-outline-danger" onclick=" alert('tem certeza que deseja fazer isso?;')">Deletar usuário do sistema
 
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-              </svg>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-dark">Nome:</label>
+    <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome completo.">
+  </div>
 
-            </a>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-dark">Numero:</label>                  
+    <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite o seu número para contato.">
+  </div>
 
-            <br>
-            
+  <div class="mb-3">   
+    <label for="exampleFormControlInput1" class="form-label text-dark">Endereço</label>                
+    <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu endereço">
+  </div>
 
-        </div>
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-dark">Email:</label>
+    <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email.">
+  </div>
 
-        <div class="col-auto d-none d-lg-block">
+     <div class="mb-3">
+         <label for="exampleFormControlInput1" class="form-label text-dark">Senha:</label>
+         <input type="password" name="subject" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha.">
+       </div>
 
-          
+     <div class="mb-3">
+         <label for="exampleFormControlInput1" class="form-label text-dark">Repetir Senha:</label>
+         <input type="password" name="message" class="form-control" id="exampleInputPassword2" placeholder="Digite sua senha novamente.">
+       </div>
 
-          <!--img 200x250-->
-
-        </div>
+       <div class="mb-3 form-check">
+        <label class="form-check-label" for="exampleCheck1">_Exibir Senha</label>
+        <input type="checkbox" class="form-check-input" onclick="mostrarOcultarSenha(),mostrarOcultarSenha2() " id="exampleCheck1">
       </div>
-    </div>
- 
 
+      <input type="file" name="fileUploaded" hidden="true"/>
+     <input class="btn btn-secondary" type="file" value="Enviar arquivo"/>
+
+       <button class="btn btn-primary" type="submit">Enviar</button>
+
+ </form>
+
+  <br><br><br><br><br><br>
   </section>
+
+   
+
+          <br>
+          <br>
+          <br>
+
+         
 
           <br>
           <br>
@@ -143,9 +142,9 @@
   <footer class="py-3 my-4 corPrimaria">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
      
-      <li class="nav-item"><a href="../public/quem_somos.html" class="nav-link px-2  text-white">Quem nós somos?</a></li>
-      <li class="nav-item"><a href="../public/doacoes.html" class="nav-link px-2  text-white">Doações</a></li>
-      <li class="nav-item"><a href="../public/contato.html" class="nav-link px-2  text-white">Contato</a></li>
+      <li class="nav-item"><a href="quem_somos.html" class="nav-link px-2  text-white">Quem nós somos?</a></li>
+      <li class="nav-item"><a href="doacoes.html" class="nav-link px-2  text-white">Doações</a></li>
+      <li class="nav-item"><a href="contato.html" class="nav-link px-2  text-white">Contato</a></li>
       <li class="nav-item"><a href="../public/politica_de_privacidade.html" class="nav-link px-2  text-white">Politica de Privacidade</a></li>
       
     </ul>

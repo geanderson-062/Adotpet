@@ -13,6 +13,29 @@
     <link rel="stylesheet" href="../css/main_style.css">
 
     <title>Adotpet</title>
+
+     <!--favicon-->
+
+<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon.icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+<link rel="manifest" href="../img/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#38b6ff">
+<meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#38b6ff">
+
+    <!--fim favicon-->
+    
   </head>
   <body>
     
@@ -20,7 +43,10 @@
   
       <nav class="navbar navbar-light corPrimaria">
         <div class="container-fluid">
-          <a class="navbar-brand text-white" href="../../index.html">Adotpet</a>
+          <a class="navbar-brand text-white" href="../../index.html">
+            <img src="../img/icone_navbar.png" alt="" width="30" height="24">
+            Adotpet
+          </a>
           <a type="button" class="btn btn-outline-light text-center" href="../private/login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
           </svg></a>
@@ -36,13 +62,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://source.unsplash.com/1400x250/?dog" class="d-block w-100" alt="...">
+                <img src="../img/banner_1.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x250/?dog" class="d-block w-100" alt="...">
+                <img src="../img/banner_2.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://source.unsplash.com/1400x250/?dog" class="d-block w-100" alt="...">
+                <img src="../img/banner_3.png" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -56,14 +82,11 @@
           </div>
           <!--fim carrosel-->
 
-          <!--sub navbar-->
-          <!-- As a link -->
-  <nav class="navbar navbar-light corPrimaria">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><br></a>
-    </div>
-  </nav>
-         <!--fim sub navbar-->
+        <!--sub navbar-->
+         
+        <nav class="navSub"></nav>
+  
+        <!--fim sub navbar-->
   
     </header>
 
@@ -75,75 +98,9 @@
 
     <main class="text-center">
 
-      <p class="fs-1">Doaçâo pelo cartão</p>
+      <p class="fs-1">Como adotar?</p>
 
-      <div class="col-md-6 container">
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-          <div class="col p-4 d-flex flex-column position-static">
-            <strong class="d-inline-block mb-2 text-success">função do usuário</strong>
-            <h3 class="mb-0">nome do usuario</h3>
-            <p class="mb-auto">Bem vindo.</p>
-  
-            <br>
-            <br>
-       
-            <form action="" method="POST" class="container"><!--link do servidor-->
-              <div>
-                 <div class="mb-3">
-                     
-                     <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite o numero do cartão">
-                   </div>
-         
-                 <div class="mb-3">
-                     
-                     <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite o cvv do cartão (número de três digitos no verso)">
-                   </div>
-  
-              </form>
-  
-              <br>
     
-              <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                  Parcelas
-                </a>
-              
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  
-                  <li><a class="dropdown-item" href="#">1</a></li>
-                  <li><a class="dropdown-item" href="#">2</a></li>
-                  <li><a class="dropdown-item" href="#">3</a></li>
-                  <li><a class="dropdown-item" href="#">4</a></li>
-                  <li><a class="dropdown-item" href="#">5</a></li>
-                  <li><a class="dropdown-item" href="#">6</a></li>
-                  <li><a class="dropdown-item" href="#">7</a></li>
-                  <li><a class="dropdown-item" href="#">8</a></li>
-                  <li><a class="dropdown-item" href="#">9</a></li>
-                  <li><a class="dropdown-item" href="#">10</a></li>
-                  <li><a class="dropdown-item" href="#">11</a></li>
-                  <li><a class="dropdown-item" href="#">12</a></li>
-                 
-                </ul>
-
-                <a href="contato.html" class="btn btn-primary" type="submit">Houve um problema? nós contate</a>
-              </div>
-
-              <br>
-
-              <button class="btn btn-primary" type="submit" onclick=" alert('Mensagem Enviada!.')">Enviar</button>
-              
-  
-          </div>
-  
-          <div class="col-auto d-none d-lg-block">
-  
-            
-  
-            <!--img 200x250-->
-  
-          </div>
-        </div>
-      </div>
 
     </main>
 
@@ -151,7 +108,36 @@
     <br>
     <br>
 
+    <!--fim titulo-->
+
+
+    <section class="container text-center">
+      <p class="fw-normal">
+
+        Dentro do site você pode escolher os animais na aba de animais disponível para adoção <br>
+        escolha um e clique ver maise em seguida adotar preencha a planilha com seus dados envie e aguarde o nosso contato.
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+
+      <div class="container text-center">
+        <a href="../../index.html" type="button" class="btn btn-primary btn-lg">OK, entendi.</a>
+        <a href="contato.html" type="button" class="btn btn-primary btn-lg">Tenho duvidas.</a> <br> <br>
+      
+       </div>
+    </section>
    
+
+          <br>
+          <br>
+          <br>
+
+         
+
+          
 
            <!--preloader-->
 
@@ -165,14 +151,15 @@
   <footer class="py-3 my-4 corPrimaria">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3 ">
      
-      <li class="nav-item"><a href="../public/quem_somos.html" class="nav-link px-2  text-white">Quem nós somos?</a></li>
-      <li class="nav-item"><a href="../public/servicos.html" class="nav-link px-2  text-white">serviços</a></li>
-      <li class="nav-item"><a href="../public/doacoes.html" class="nav-link px-2  text-white">Doações</a></li>
-      <li class="nav-item"><a href="../public/contato.html" class="nav-link px-2  text-white">Contato</a></li>
+      <li class="nav-item"><a href="quem_somos.html" class="nav-link px-2  text-white">Quem nós somos?</a></li>
+      <li class="nav-item"><a href="doacoes.html" class="nav-link px-2  text-white">Doações</a></li>
+      <li class="nav-item"><a href="contato.html" class="nav-link px-2  text-white">Contato</a></li>
+      <li class="nav-item"><a href="politica_de_privacidade.html" class="nav-link px-2  text-white">Politica de Privacidade</a></li>
       
     </ul>
     <p class="text-center text-white">© 2021 Adotpet Company, Inc</p>
   </footer>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
