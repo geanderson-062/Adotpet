@@ -1,0 +1,6 @@
+tamanho do banner 1400X500
+
+tamnho dos cards 300x200
+
+tamanho img 150X150
+

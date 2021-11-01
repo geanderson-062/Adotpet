@@ -1,2 +1,2 @@
 
-tamanho 800X600
+tamanho 300x200
