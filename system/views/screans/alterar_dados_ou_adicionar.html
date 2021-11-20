@@ -60,78 +60,102 @@
     <br>
     <br>
 
-    <section class="container">
+    <section class="">
         <div class="text-dark text-center container pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-dark"> 
-          <h1 class="display-4">Alterar dados</h1>
+          <h1 class="display-4">Alterar ou adicionar dados</h1>
     
             <br><br>
              
-    
-              <form action="" method="POST" class="container"><!--link do servidor-->
-                <div>
-                   <div class="mb-3">
-                       
-                       <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome completo.">
-                     </div>
-           
-                   <div class="mb-3">
-                       
-                       <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu cpf.">
-                     </div>
-
-                   <div class="mb-3">
-                      
-                       <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu rg.">
-                     </div>
-           
-                   <div class="mb-3">
-                       
-                       <input type="text" name="subject" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu endereço">
-                     </div>
-
-                     <div class="mb-3">
-                       
-                        <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email.">
-                      </div>
-
-                      <div class="mb-3">
-                    
-                        <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Digite o seu número para contato.">
-                      </div>
-                    
-                         <div class="mb-3">
-                          
-                             <input type="password" name="subject" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha.">
-                           </div>
-                    
-                         <div class="mb-3">
-                          
-                             <input type="password" name="message" class="form-control" id="exampleInputPassword2" placeholder="Digite sua senha novamente.">
-                           </div>
-
-                           <div class="mb-3 form-check">
- 
-                            <input type="checkbox" class="form-check-input" onclick="mostrarOcultarSenha(),mostrarOcultarSenha2()" id="exampleCheck1" value="_Exibir Senha">
-                            <label class="form-check-label" for="exampleCheck1">Exibir Senha</label>
-                            
-                          </div>
+                <div class="container"> <!--col-md-7 col-lg-8-->
                   
-                     <button class="btn btn-primary" type="submit" onclick=" alert('alteração realizada.')">Alterar dados</button>
-                  </div>
-              
-               </form>
+                  <form class="needs-validation" novalidate="" method="POST">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="text" class="form-label">Digite seu CPF</label>
+                        <input type="text" class="form-control"  placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          coloque seu CPF.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="text" class="form-label">Digite seu RG</label>
+                        <input type="text" class="form-control"  placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          coloque seu RG.
+                        </div>
+                      </div>
+          
+                      
+          
+                      <div class="col-12">
+                        <label for="text" class="form-label">Nome:</label>
+                        <input type="text" class="form-control"  placeholder="Digite seu nome completo.">
+                        <div class="invalid-feedback">
+                         Digite seu nome.
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu Email.">
+                        <div class="invalid-feedback">
+                          Digite seu email.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="text" class="form-label">Endereço:</label>
+                        <input type="text" class="form-control"  placeholder="Digite seu endereço" required="">
+                        <div class="invalid-feedback">
+                          Digite seu endereço.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="text" class="form-label">Número:</label>
+                        <input type="text" class="form-control"  placeholder="Digite seu número para contato.">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="password" class="form-label">senha:</label>
+                        <input type="password" name="subject" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha.">
+                      </div>
+
+                      <div class="col-12">
+                        <label for="password" class="form-label">repetir senha:</label>
+                        <input type="password" name="message" class="form-control" id="exampleInputPassword2" placeholder="Digite sua senha novamente.">
+                      </div>
+
+                      <div class="mb-3 form-check">
+                        <label class="form-check-label" for="same-address">_Exibir Senha</label>
+                        <input type="checkbox" class="form-check-input" onclick="mostrarOcultarSenha(),mostrarOcultarSenha2() " id="exampleCheck1">
+                      </div>
+                      
+
+                    <br>
+                    <br>
+                    <br>
+          
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">atualizar informações 
+
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+                        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+                      </svg>
+
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+            </form>
     
         </section>
 
           <br>
           <br>
           <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
+         
 
            <!--preloader-->
 
