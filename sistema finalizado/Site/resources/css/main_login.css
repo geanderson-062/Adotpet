@@ -1,0 +1,104 @@
+
+ /*fixar rodape(footer) no final*/
+ .fixarRodape{
+    bottom: 0;
+    position: fixed;
+   width: 100%;
+  } 
+  /*fim fixar footer*/
+
+/*inicio css login e cadastro*/
+
+*{
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrant", sans-serif;
+   box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+  /*background-image: url('./bg.jpg');*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.corpo{
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   border-radius: 35px;
+   background: #0082e6;
+   margin: 0 auto;
+   width: 30%;
+   height: 430px; /*400px tamanho original*/
+}
+.corpo h2{
+   text-align: center;
+   color: #ffffff;
+   padding: 20px 0;
+}
+
+.corpo h3{
+   text-align: center;
+   color: #ffffff;
+   padding: 20px 0;
+}
+
+.corpo a {
+   color: #ffffff;
+}
+.corpo h2::after{
+   content: '';
+   display: block;
+   margin: 10px auto;
+   border-bottom: 3px solid #ffffff;
+   width: 25%;
+}
+.corpo input{
+   display: block;
+   margin: 20px auto;
+   box-sizing: content-box;
+   border: 2px solid #ffffff;
+   border-radius: 25px;
+   width: 75%;
+   height: 40px;
+   padding: 2px 5px;
+   font-size: 16pt;
+   transition: .2s;
+   outline: none;
+   background-color: transparent;
+   text-indent: 10px;
+}
+.corpo input[type="text"]:focus,
+.corpo input[type="password"]:focus{
+   background-color: #ffffff;
+}
+.corpo input[type="text"]::placeholder,
+.corpo input[type="password"]::placeholder{
+   font-size: 16pt;
+   color: #ffffff;
+   text-indent: 10px;
+}
+.corpo input[type="submit"]{
+   background-color: transparent;
+   color: #ffffff;
+}
+.corpo input[type="submit"]:hover{
+   background-color: #1ce2f0;
+   color: #ffffff;
+   transition: 1s;
+}
+@media screen and (max-width: 900px){
+   .corpo{
+       width: 70%;
+   }
+}
+@media screen and (max-width: 400px){
+   .corpo{
+       width: 85%;
+   }
+}
+
+/*#1ce2f0 cor azul inicial*/
+
+/*linear-gradient(90deg, rgba(55,157,212,1) 0%, rgba(7,148,224,1) 48%, rgba(0,212,255,1) 100%) */

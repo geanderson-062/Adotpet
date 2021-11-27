@@ -1,0 +1,17 @@
+html{
+    scroll-behavior: smooth ; /*diminuindo a velocidade do scrol*/
+}
+
+.corPrimaria{
+    background: #38b6ff;
+}
+
+.corSecundaria{
+    background: #ffff;
+}
+
+.navSub{
+    width: auto;
+    height: 15px;
+    background: #38b6ff;
+}
