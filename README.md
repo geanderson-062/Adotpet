@@ -4,9 +4,31 @@
 
 Este projeto foi desenvolvido como parte do curso ministrado pelo professor José Marcones da Silva Lira.
 
+---
+
 ## Status de Entrega
 
 O projeto foi entregue no dia 25/11/2021.
+
+---
+
+## Autores
+
+- Geanderson Ferreira
+- Viviane Raquel
+- Alessandro Sousa
+- João Vilar
+- Danley Silva
+
+---
+
+## Agradecimentos
+
+- Professor José Marcones da Silva Lira - *Por fornecer orientação e suporte ao longo do projeto*
+- Colegas de Classe - *Por feedback e sugestões*
+- UNINASSAU Caruaru - *Por fornecer a oportunidade e os recursos para desenvolver este projeto*
+
+ ---
 
 ## Introdução
 
@@ -50,17 +72,5 @@ Adotpet é uma plataforma dedicada à adoção de animais, proporcionando uma ex
 3. Faça commit das suas alterações: `git commit -m 'Adiciona nova feature'`.
 4. Faça push da branch: `git push origin feature/nova-feature`.
 5. Abra um Pull Request.
-
----
-
-## Autores
-
-[Geanderson Ferreira]
-[Viviane Raquel]
-[Alessandro Sousa]
-[João Vilar]
-[Danley Silva]
-
----
 
 **Adotpet - Encontre seu novo melhor amigo!**
